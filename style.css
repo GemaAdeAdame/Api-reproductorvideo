@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-image: url('images/fondo.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Quicksand';
+    text-align: center;
+    padding: 15px;
+}
+
+.reproductorload, .reproductorvideo {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Quicksand';
+    font-size: 16px;
+}
+
+.botones {
+    text-align: center;
+}
+
+#playBtn {
+    color: #2E840D;
+    border-color: #2E840D;
+}
+
+#playBtn:hover, #stopBtn:hover {
+    background-color: #244E52;
+}
+
+#stopBtn {
+    color: #2E840D;
+    border-color: #244E52;
+}
+
+#mute-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+}
+
+.fa {
+    font-size: 20px;
+    color: #244E52;
+    margin-left: 8px;
+}
+
+#volume-slider {
+    width: 200px;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ffff, #fff, #3d6264, #315f61, #355c5f);
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #244E52;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+    background: linear-gradient(to right, #2E840D 0%, #2E840D 50%, #244E52 50%, #244E52 100%);
+    height: 10px;
+    border-radius: 10px;
+}
+
+input[type="range"]:hover::-moz-range-track {
+    background: linear-gradient(to right, #4AD150 0%, #4AD150 50%, #35918F 50%, #35918F 100%);
+}
